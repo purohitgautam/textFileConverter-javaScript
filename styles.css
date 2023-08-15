@@ -1,0 +1,72 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #17A2B8;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.wrapper textarea{
+    resize: none;
+    width: 400px;
+    height: 370px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.file-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 0 5px;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 10px 0;
+}
+
+.file-name input,
+.save-as select{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.save-as select{
+    width: 165.6px;
+    padding: 0;
+}
+
+.save-btn{
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #17A2B8;
+    border: none;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+textarea:valid ~ .save-btn{
+    opacity: 1;
+    pointer-events: auto;
+}
